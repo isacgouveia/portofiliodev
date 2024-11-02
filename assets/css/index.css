@@ -228,3 +228,64 @@ section#services{
     }
 
 }
+
+footer{
+    width: 100%;
+    padding: 128px 120px 200px 120px;
+    background-image: url(../images/Background_Contacts.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    & {
+
+        p:nth-child(1){
+            font: var(--subtitle);
+            color: var(--bg-purple);
+            padding-block: 8px;
+        }
+        h3{
+            font: var(--title-md);
+            color: var(--gray-600);
+        }
+        p:nth-child(3){
+            padding-block: 8px;
+            font: var(--text-md);
+            color: var(--gray-500);
+        }
+
+    }
+    .social-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font: var(--text-sm);
+
+        .social-button {
+            width: 400px;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #2c2f3f;
+            
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 10px;
+
+            &:hover {
+                border: 1px solid var(--bg-blue);
+              }
+    
+            & .text {
+                flex-grow: 1;
+            }
+          }
+
+
+    }
+
+}
+
